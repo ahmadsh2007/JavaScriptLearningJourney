@@ -1,3 +1,4 @@
+/*
 let js = "Amazing";
 console.log(40 + 8 + 23 - 10);
 
@@ -20,3 +21,33 @@ let PI = 3.14159;
 console.log("the value of pi is", PI)
 
 console.log(myFirstJob);
+*/
+
+true;
+console.log(true);
+let javaScriptIsFun = true;
+console.log(javaScriptIsFun);
+
+// * The values hold the type in JS not the variable
+
+let myAge = 18;
+// console.log(typeof true);
+console.log(typeof javaScriptIsFun);
+// console.log(typeof myAge);
+// console.log(typeof "My name is Ahmad");
+
+// Dynamic typing
+javaScriptIsFun = 'YES!';
+console.log(typeof javaScriptIsFun);
+
+// 😔 MIT didn't accept me yet
+let University;
+// Both the value and type are 'undefined'
+console.log(University);
+console.log(typeof University);
+
+University = "MIT";
+console.log(typeof University)
+
+// JavaScript will show it as an Object, and it's regarded as a bug (They never fixed this bug for legacy reasons)
+console.log(typeof null)
