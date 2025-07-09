@@ -23,6 +23,7 @@ console.log("the value of pi is", PI)
 console.log(myFirstJob);
 */
 
+/*
 true;
 console.log(true);
 let javaScriptIsFun = true;
@@ -51,3 +52,18 @@ console.log(typeof University)
 
 // JavaScript will show it as an Object, and it's regarded as a bug (They never fixed this bug for legacy reasons)
 console.log(typeof null)
+*/
+
+let age = 30;
+age = 31;
+
+const birthYear = 2007;
+
+// Try to avoid 'var' as much as possible
+// You should know that the let is block scoped and that VAR is function-scoped
+var job = 'Programmer';
+job = 'Engineer';
+
+// DO NOT DO IT, because it doesn't create the variable in the current scope. Instead, JS will create a property on the global object
+lastName = 'Shatnawi'
+console.log(lastName);
