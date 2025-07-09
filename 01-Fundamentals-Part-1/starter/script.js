@@ -54,6 +54,7 @@ console.log(typeof University)
 console.log(typeof null)
 */
 
+/*
 let age = 30;
 age = 31;
 
@@ -67,3 +68,37 @@ job = 'Engineer';
 // DO NOT DO IT, because it doesn't create the variable in the current scope. Instead, JS will create a property on the global object
 lastName = 'Shatnawi'
 console.log(lastName);
+*/
+
+// An operator basically allows us to transform values or combine multiple values
+// There are many categories of operators like mathematical operators, comparison operators logical operators, assignment operators, and many more
+
+// mathematical operators
+const year = 2050
+const ageAhmad = year - 2007;
+const ageRuh = year - 2029;
+console.log(ageAhmad, ageRuh);
+
+// 2 ** 3 means 2 to the power of 3 = 2 * 2 * 2
+console.log(ageAhmad / 2, ageRuh * 2, ageAhmad - ageRuh, 2 ** 3);
+
+// Plus, + , operators can be used to join strings
+const firstName = "Ahmad";
+const lastName = "Shatnawi";
+console.log("Hello " + firstName + ' ' + lastName);
+
+console.log(typeof ageRuh);
+
+// assignment operators
+let x = 10 + 5; // 15
+x += 10; // x = x + 10 (25)
+x *= 4; // x = x * 4 (100)
+x++; // x = x + 1 (101)
+x--; // x + x - 1 (100)
+console.log(x);
+
+// comparison operators
+console.log(ageAhmad > ageRuh);
+console.log(ageRuh >= 18);
+
+const isOlder = ageAhmad > ageRuh;
