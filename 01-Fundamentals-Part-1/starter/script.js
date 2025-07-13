@@ -333,6 +333,7 @@ switch(day){
 */
 
 
+/*
 3 + 4                       // this is an expression
 1991                        // this is also an expression
 true && false || !false     // this is also an expression
@@ -341,3 +342,15 @@ true && false || !false     // this is also an expression
 if(23>10){
     const str = '23 is bigger';
 }
+*/
+
+
+const age = 23;
+age >= 18 ? console.log("You're an adult!") : console.log("You're a child!");
+
+// you can use it as an expression (check below), and no need to declare the variable before
+const oldEnough = age >= 18 ? "an adult!" : "a child!";
+console.log(`You're ${oldEnough}`);
+
+// you can have conditionals inside a Template Literals by using Ternary Operator (The Conditional)
+console.log(`You're ${age >= 18 ? "an adult!" : "a child!"}`);
