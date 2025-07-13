@@ -207,6 +207,7 @@ console.log('10' - '4' - '3' - 2 + '5') // 10 - 4 - 3 = 3, 3 - 2 = 1, 1 + '5' = 
 */
 
 
+/*
 // 5 falsy values: 0, '', undefined, null, NaN
 // everything else is truthy values
 
@@ -229,4 +230,34 @@ if(height){
     console.log("Height is defined!");
 } else {
     console.log("Height is not defined (UNDEFINED)");
+}
+*/
+
+
+// === is called strict equality operator because it does not perform type coercsion
+// == is called loose equality operator because it performs type coercsion
+// 18 === '18' ---> false
+// 18 == '18' ----> true
+// It's better to always use strict equality operator and convert the value type manually
+// !== is the strict not equal operator
+// != is the loose not equal operator
+let age = 18;
+
+if(age === 18) console.log("You just became an adult!!! (strict)");
+if(age == 18) console.log("You just became an adult!!! (loose)");
+
+age = '18';
+
+if(age === 18) console.log("You just became an adult!!! (strict)");
+if(age == 18) console.log("You just became an adult!!! (loose)");
+
+let favNumber = Number(prompt("What's your favoutire number?"));
+console.log(typeof favNumber, favNumber);
+
+if(favNumber == 18){
+    console.log("Cool! 18 is an amazing number!")
+}
+
+if(favNumber === 18){
+    console.log("Cool! 18 is an amazing number!")
 }
