@@ -307,6 +307,7 @@ if(scoreDolphins > scoreKoalas){
 */
 
 
+/*
 const day = 'Monday';
 
 switch(day){
@@ -328,4 +329,15 @@ switch(day){
         break;
     default:
         console.log("Ha???");
+}
+*/
+
+
+3 + 4                       // this is an expression
+1991                        // this is also an expression
+true && false || !false     // this is also an expression
+
+// this is an statement because it doesn't produce a value, but the const is expression because it creates a value
+if(23>10){
+    const str = '23 is bigger';
 }
