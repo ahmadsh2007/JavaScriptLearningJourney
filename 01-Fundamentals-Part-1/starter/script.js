@@ -1,3 +1,5 @@
+// * Check https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_precedence
+
 /*
 let js = "Amazing";
 console.log(40 + 8 + 23 - 10);
@@ -70,6 +72,7 @@ lastName = 'Shatnawi'
 console.log(lastName);
 */
 
+/*
 // An operator basically allows us to transform values or combine multiple values
 // There are many categories of operators like mathematical operators, comparison operators logical operators, assignment operators, and many more
 
@@ -102,3 +105,15 @@ console.log(ageAhmad > ageRuh);
 console.log(ageRuh >= 18);
 
 const isOlder = ageAhmad > ageRuh;
+*/
+
+
+const now = 2037;
+const ageAhmad = now - 2007;
+const ageRuh = now - 2029;
+
+console.log(now - 2007 > now - 2018);
+
+let x, y;
+x = y  = 25 - 10 - 5; // Check Operator Precedence on https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_precedence
+console.log(x, y);
