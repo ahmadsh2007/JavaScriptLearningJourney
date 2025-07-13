@@ -25,6 +25,7 @@ console.log("the value of pi is", PI)
 console.log(myFirstJob);
 */
 
+
 /*
 true;
 console.log(true);
@@ -56,6 +57,7 @@ console.log(typeof University)
 console.log(typeof null)
 */
 
+
 /*
 let age = 30;
 age = 31;
@@ -71,6 +73,7 @@ job = 'Engineer';
 lastName = 'Shatnawi'
 console.log(lastName);
 */
+
 
 /*
 // An operator basically allows us to transform values or combine multiple values
@@ -107,6 +110,7 @@ console.log(ageRuh >= 18);
 const isOlder = ageAhmad > ageRuh;
 */
 
+
 /*
 const now = 2037;
 const ageAhmad = now - 2007;
@@ -118,6 +122,7 @@ let x, y;
 x = y  = 25 - 10 - 5; // Check Operator Precedence on https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_precedence
 console.log(x, y);
 */
+
 
 /*
 const firstName = 'Ahmad';
@@ -144,6 +149,8 @@ multiple
 lines`);
 */
 
+
+/*
 const age = 16;
 const allowedToDriveAge = 18;
 const isOldEnough = age >= allowedToDriveAge;
@@ -152,7 +159,6 @@ const isOldEnough = age >= allowedToDriveAge;
 //     console.log("You're allowed to get a license 🚘");
 // }
 
-/*
 if(age >= allowedToDriveAge){
     console.log("You're allowed to drive 🚗");
 } else {
@@ -171,6 +177,8 @@ if (birthYear <= 2000){
 console.log(century);
 */
 
+
+/*
 // Type conversion
 const inputYear = '2007';
 console.log(Number(inputYear), inputYear);
@@ -196,3 +204,29 @@ console.log(n);
 
 console.log(2 + 3 + 4 + '7'); // 2 + 3 + 4 = 9, 9 + '7' = '97'
 console.log('10' - '4' - '3' - 2 + '5') // 10 - 4 - 3 = 3, 3 - 2 = 1, 1 + '5' = '15'
+*/
+
+
+// 5 falsy values: 0, '', undefined, null, NaN
+// everything else is truthy values
+
+console.log(Boolean(0));
+console.log(Boolean(undefined));
+console.log(Boolean('Ahmad'));
+console.log(Boolean({})); // it's an empty object
+console.log(Boolean(''));
+
+const money = 0;
+if(money){
+    console.log("Don't spend it all :)");
+} else {
+    console.log("You should get a job!");
+}
+
+// 0 will bug the code
+let height = 0;
+if(height){
+    console.log("Height is defined!");
+} else {
+    console.log("Height is not defined (UNDEFINED)");
+}
