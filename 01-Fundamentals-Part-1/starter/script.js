@@ -293,6 +293,7 @@ if(hasDriversLicense && hasGoodVision && !isTired){
 */
 
 
+/*
 const scoreDolphins = (96 + 102 + 89) / 3;
 const scoreKoalas = (88 + 91 + 110) / 3;
 
@@ -302,4 +303,29 @@ if(scoreDolphins > scoreKoalas){
     console.log("Koalas win the trophy");
 } else {
     console.log("Both win the trophy");
+}
+*/
+
+
+const day = 'Monday';
+
+switch(day){
+    case 'Monday':
+        console.log("Study JS");
+        console.log("Take care of your family before");
+        break;
+    case 'Tuesday':
+        console.log("Study CS50");
+        break;
+    case 'Wednesday':
+    case 'Thursday':
+        console.log("Study IELTS and SAT");
+        break;
+    case 'Friday':
+    case 'Saturday':
+    case 'Sunday':
+        console.log("Do whatever you want");
+        break;
+    default:
+        console.log("Ha???");
 }
