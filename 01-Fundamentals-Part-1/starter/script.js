@@ -234,6 +234,7 @@ if(height){
 */
 
 
+/*
 // === is called strict equality operator because it does not perform type coercsion
 // == is called loose equality operator because it performs type coercsion
 // 18 === '18' ---> false
@@ -260,4 +261,31 @@ if(favNumber == 18){
 
 if(favNumber === 18){
     console.log("Cool! 18 is an amazing number!")
+}
+*/
+
+
+const hasDriversLicense = true;
+const hasGoodVision = true;
+
+console.log(hasDriversLicense && hasGoodVision);
+console.log(hasDriversLicense || hasGoodVision);
+console.log(!hasDriversLicense);
+console.log(!hasGoodVision);
+
+const shoudlDrive = hasDriversLicense && hasGoodVision;
+if(shoudlDrive){
+    console.log("You are able to drive!");
+} else {
+    console.log("Someone else should drive...");
+}
+
+const isTired = true;
+console.log(hasDriversLicense || hasGoodVision || isTired);
+console.log(hasDriversLicense && hasGoodVision && isTired);
+
+if(hasDriversLicense && hasGoodVision && !isTired){
+    console.log("You are able to drive!");
+} else {
+    console.log("Someone else should drive...");
 }
