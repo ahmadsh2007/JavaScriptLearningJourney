@@ -152,6 +152,7 @@ const isOldEnough = age >= allowedToDriveAge;
 //     console.log("You're allowed to get a license 🚘");
 // }
 
+/*
 if(age >= allowedToDriveAge){
     console.log("You're allowed to drive 🚗");
 } else {
@@ -168,3 +169,30 @@ if (birthYear <= 2000){
     century = 21;
 }
 console.log(century);
+*/
+
+// Type conversion
+const inputYear = '2007';
+console.log(Number(inputYear), inputYear);
+console.log(inputYear + 18);
+console.log(18 + inputYear);
+console.log(Number(inputYear) + 18);
+
+console.log(Number("Ahmad")); // we will get NaN
+console.log(typeof NaN);
+
+console.log(String(23), 23);
+
+// Type coercion
+console.log("I'm " + 18 + " years old.");
+console.log('23' - '10' - 3);
+console.log('23' + '10' + 3);
+console.log('23' * '2');
+console.log('23' / '2');
+
+let n = '1' + 1;
+n = n - 1;
+console.log(n);
+
+console.log(2 + 3 + 4 + '7'); // 2 + 3 + 4 = 9, 9 + '7' = '97'
+console.log('10' - '4' - '3' - 2 + '5') // 10 - 4 - 3 = 3, 3 - 2 = 1, 1 + '5' = '15'
