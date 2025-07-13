@@ -345,6 +345,7 @@ if(23>10){
 */
 
 
+/*
 const age = 23;
 age >= 18 ? console.log("You're an adult!") : console.log("You're a child!");
 
@@ -354,3 +355,9 @@ console.log(`You're ${oldEnough}`);
 
 // you can have conditionals inside a Template Literals by using Ternary Operator (The Conditional)
 console.log(`You're ${age >= 18 ? "an adult!" : "a child!"}`);
+*/
+
+
+const bill = 275;
+const tip = bill * ((bill >= 50 && bill <= 300) ? .15 : .2);
+console.log(`The bill was ${bill}, the tip was ${tip}, and the total value ${bill + tip}`);
