@@ -119,6 +119,7 @@ x = y  = 25 - 10 - 5; // Check Operator Precedence on https://developer.mozilla.
 console.log(x, y);
 */
 
+/*
 const firstName = 'Ahmad';
 const job = 'Software Developer';
 const birthYear = 2007;
@@ -141,3 +142,29 @@ lines');
 console.log(`String
 multiple
 lines`);
+*/
+
+const age = 16;
+const allowedToDriveAge = 18;
+const isOldEnough = age >= allowedToDriveAge;
+
+// if(isOldEnough){
+//     console.log("You're allowed to get a license 🚘");
+// }
+
+if(age >= allowedToDriveAge){
+    console.log("You're allowed to drive 🚗");
+} else {
+    const yearLeft = 18 - age;
+    console.log("You're not allowed to drive 💥💥");
+    console.log(`Come back in ${yearLeft} year/s.`);
+}
+
+let century;
+const birthYear = 2007;
+if (birthYear <= 2000){
+    century = 20;
+} else {
+    century = 21;
+}
+console.log(century);
