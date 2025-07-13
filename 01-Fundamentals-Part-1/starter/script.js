@@ -107,7 +107,7 @@ console.log(ageRuh >= 18);
 const isOlder = ageAhmad > ageRuh;
 */
 
-
+/*
 const now = 2037;
 const ageAhmad = now - 2007;
 const ageRuh = now - 2029;
@@ -117,3 +117,27 @@ console.log(now - 2007 > now - 2018);
 let x, y;
 x = y  = 25 - 10 - 5; // Check Operator Precedence on https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_precedence
 console.log(x, y);
+*/
+
+const firstName = 'Ahmad';
+const job = 'Software Developer';
+const birthYear = 2007;
+const age = 2025 - birthYear;
+
+const ahmad = "I'm " + firstName + ', a ' + age + ' years old ' + job + '!';
+console.log(ahmad);
+
+// Template Literals
+const ahmadTemplate = `I'm ${firstName}, a ${age} years old ${job}!`;
+console.log(ahmadTemplate);
+
+console.log(`You can use \`\` for all strings`);
+
+// Mult-line string
+console.log('String with \n\
+multiple \n\
+lines');
+
+console.log(`String
+multiple
+lines`);
