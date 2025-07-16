@@ -99,6 +99,7 @@ function checkWinner(avgDolphins , avgKoalas){
 */
 
 
+/*
 // Arrays
 const friends = ['Michael', 'Steven', 'Peter'];
 console.log(friends);
@@ -138,3 +139,43 @@ console.log(age1, age2, age3);
 
 const ages = [calcAge(birthYear[0]), calcAge(birthYear[1]), calcAge(birthYear[birthYear.length - 1])];
 console.log(ages);
+*/
+
+
+// it add the new element to the end of the array
+const friends = ['Michael', 'Steven', 'Peter'];
+
+// the push method returns a value which is the length of the new array
+const newLength = friends.push('Suhaib');
+console.log(friends);
+console.log(newLength);
+
+// it adds the new element to the beginning of the array and return the length of the new array
+friends.unshift('Ahmad');
+console.log(friends);
+
+// remove elements
+// it returns the removed element
+const popped = friends.pop(); // Last
+console.log(friends);
+console.log(popped);
+
+// remove the first element of the array
+// it also returns the removed element
+friends.shift(); // First
+console.log(friends);
+
+// locate an element
+console.log(friends.indexOf('Peter'));
+console.log(friends.indexOf('Ahmad')); // We will get -1 because it's not in the array
+
+// includes returns false or true not the index of the element
+friends.push(23);
+console.log(friends.includes('Steven'));
+console.log(friends.includes('Ahmad'));
+console.log(friends.includes('23')); // it won't work because its a string, it uses ===
+console.log(friends.includes(23)); // it will work
+
+if (friends.includes('Peter')){
+    console.log("You have a friend called Peter");
+}
