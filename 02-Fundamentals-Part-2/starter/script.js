@@ -324,6 +324,7 @@ console.log(ahmad2.getSummary());
 */
 
 
+/*
 const mark = {
     fullName: 'Mark Miller',
     mass: 78,
@@ -348,3 +349,9 @@ const john = {
 
 console.log(`${mark.calcBMI() > john.calcBMI() ? mark.fullName : john.fullName}'s BMI (${mark.calcBMI() > john.calcBMI() ? mark.calcBMI() : john.calcBMI()}) \
 is higher than ${mark.calcBMI() > john.calcBMI() ? john.fullName : mark.fullName}'s (${mark.calcBMI() > john.calcBMI() ? john.calcBMI() : mark.calcBMI()})!`);
+*/
+
+
+for (let i = 0; i < 30; i++){
+    console.log(`Lifting weights repetition ${i + 1}`);
+}
