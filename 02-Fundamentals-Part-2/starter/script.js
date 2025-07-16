@@ -13,6 +13,7 @@ if (hasDriversLicense) console.log('I can drive');
 */
 
 
+/*
 function logger() {
     console.log("My name is Ahmad");
 }
@@ -30,3 +31,23 @@ function fruitProcessor(apples, oranges) {
 
 const appleJuice = fruitProcessor(5, 0);
 console.log(appleJuice);
+*/
+
+
+// * Funtion declaration
+const age1 = calcAge1(2007)
+
+function calcAge1(birthYear){
+    return 2047 - birthYear;
+}
+
+// ! Function expression
+const calcAge2 = function (birthYear){
+    return 2047 - birthYear;
+}
+
+const age2 = calcAge2(2007);
+console.log(age1, age2);
+
+// You can the function declaration before defining it, but not function expression
+// Please avoid doing it
