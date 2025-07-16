@@ -200,6 +200,7 @@ const totals = [bills[0] + tips[0], bills[1] + tips[1], bills[2] + tips[2]];
 */
 
 
+/*
 // Array
 const ahmadArray = [
     'Ahmad',
@@ -223,3 +224,36 @@ const ahmad = {
 
 console.log(ahmadArray);
 console.log(ahmad);
+*/
+
+
+const ahmad = {
+    firstName: 'Ahmad',
+    lastName: 'Shatnawi',
+    age: 2025 - 2007,
+    job: 'Student',
+    friends: ['Omar', 'Homam', 'Wasfi']
+};
+
+console.log(ahmad.firstName);
+console.log(ahmad['firstName']); // we can use any expression
+
+const nameKey = 'Name';
+console.log(ahmad['first' + nameKey]);
+console.log(ahmad['last' + nameKey]);
+
+// console.log(ahmad.'first' + nameKey); // ! won't work
+// const interestedIn = prompt("What do you want to know about Ahmad?");
+// console.log(ahmad.interestedIn);  // won't work because we don't have property called interestedIn
+
+// if(ahmad[interestedIn]){
+//     console.log(ahmad[interestedIn]); // will work
+// } else {
+//     console.log('Wrong request!');
+// }
+
+ahmad.location =   'Jordan';
+ahmad['discord'] = 'leeking.s';
+console.log(ahmad);
+
+console.log(`${ahmad.firstName} has ${ahmad['friends'].length} friends, and his best friend is called ${ahmad['friends'][0]}`);
