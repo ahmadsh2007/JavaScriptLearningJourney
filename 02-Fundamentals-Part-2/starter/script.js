@@ -51,3 +51,17 @@ console.log(age1, age2);
 
 // You can the function declaration before defining it, but not function expression
 // Please avoid doing it
+
+// Arrow function
+const calcAge3 = birthYear => 2047 - birthYear;
+const age3 = calcAge3(2007);
+console.log(age3);
+
+const yearsUntilRetirement = (birthYear, firstName) => {
+    const age = 2047 - birthYear;
+    const retirement = 65 - age;
+    // return retirement;
+    return `${firstName} retires in ${retirement} years.`;
+}
+
+console.log(yearsUntilRetirement(2007, 'Ahmad Shatnawi'));
