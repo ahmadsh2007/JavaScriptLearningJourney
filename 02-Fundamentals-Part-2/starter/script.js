@@ -398,6 +398,7 @@ for (let i = 0; i < ahmad.length; i++){
 */
 
 
+/*
 const ahmad = [
     'Ahmad',
     'Shatnawi',
@@ -416,4 +417,17 @@ for (let exercise = 1; exercise <= 3; exercise++){
     for (let rep = 1; rep <= 5; rep++){
         console.log(`Lifting weight repetition ${rep}`);
     }
+}
+*/
+
+// let rep = 1;
+// while (rep <= 10){
+//     console.log(`Lifting weights repetition ${rep}`);
+//     rep++;
+// }
+
+let dice = Math.trunc(Math.random() * 6);
+while (dice !== 6){
+    console.log(`You rolled a ${dice}`);
+    dice = Math.trunc(Math.random() * 6);
 }
