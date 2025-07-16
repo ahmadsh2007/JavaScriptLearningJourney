@@ -261,6 +261,7 @@ console.log(`${ahmad.firstName} has ${ahmad['friends'].length} friends, and his 
 */
 
 
+/*
 const ahmad = {
     firstName: 'Ahmad',
     lastName: 'Shatnawi',
@@ -320,3 +321,29 @@ console.log(ahmad2.age);
 // Challenge
 // "Ahmad is a 18-year old student, and he has a driver's license"
 console.log(ahmad2.getSummary());
+*/
+
+
+const mark = {
+    fullName: 'Mark Miller',
+    mass: 78,
+    height: 1.69,
+
+    calcBMI: function(){
+        this.bmi = this.mass / (this.height * this.height );
+        return this.bmi;
+    }
+}
+
+const john = {
+    fullName: 'John Smith',
+    mass: 92,
+    height : 1.95,
+
+    calcBMI: function(){
+        this.bmi = this.mass / (this.height * this.height );
+        return this.bmi;
+    }
+}
+
+console.log(`${mark.calcBMI() > john.calcBMI() ? mark.fullName : john.fullName}'s BMI (${mark.calcBMI() > john.calcBMI() ? mark.calcBMI() : john.calcBMI()}) is higher than ${mark.calcBMI() > john.calcBMI() ? john.fullName : mark.fullName}'s (${mark.calcBMI() > john.calcBMI() ? john.calcBMI() : mark.calcBMI()})!`);
