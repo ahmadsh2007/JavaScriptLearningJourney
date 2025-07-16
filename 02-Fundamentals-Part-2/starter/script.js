@@ -359,6 +359,7 @@ for (let i = 0; i < 30; i++){
 */
 
 
+/*
 const ahmad = [
     'Ahmad',
     'Shatnawi',
@@ -393,4 +394,26 @@ console.log('--- BREAK WITH NUMBER ---');
 for (let i = 0; i < ahmad.length; i++){
     if (typeof ahmad[i] === 'number') break;
     console.log(ahmad[i], typeof ahmad[i]);
+}
+*/
+
+
+const ahmad = [
+    'Ahmad',
+    'Shatnawi',
+    2025 - 2007,
+    'Student',
+    ['Omar', 'Homam', 'Wasfi']
+];
+
+// loop backwards
+for (let i = ahmad.length - 1; i >= 0; i--){
+    console.log(i, ahmad[i]);
+}
+
+for (let exercise = 1; exercise <= 3; exercise++){
+    console.log(`------ Starting exercise ${exercise}`);
+    for (let rep = 1; rep <= 5; rep++){
+        console.log(`Lifting weight repetition ${rep}`);
+    }
 }
