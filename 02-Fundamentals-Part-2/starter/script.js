@@ -183,6 +183,7 @@ if (friends.includes('Peter')){
 */
 
 
+/*
 function calcTip(bill){
     let tip = 0;
     if (bill >= 50 && bill <= 300){
@@ -196,3 +197,29 @@ function calcTip(bill){
 const bills = [125, 555, 44];
 const tips = [calcTip(bills[0]), calcTip(bills[1]), calcTip(bills[2])];
 const totals = [bills[0] + tips[0], bills[1] + tips[1], bills[2] + tips[2]];
+*/
+
+
+// Array
+const ahmadArray = [
+    'Ahmad',
+    'Shatnawi',
+    2025 - 2007,
+    'Student',
+    ['Omar', 'Homam', 'Wasfi']
+];
+
+// Object
+// Key: Value (fisrtName: 'Ahmad')
+// each key is called property
+// property firstName has the value of 'Ahmad'
+const ahmad = {
+    fisrtName: 'Ahmad',
+    lastName: 'Shatnawi',
+    age: 2025 - 2007,
+    job: 'Student',
+    friends: ['Omar', 'Homam', 'Wasfi']
+};
+
+console.log(ahmadArray);
+console.log(ahmad);
