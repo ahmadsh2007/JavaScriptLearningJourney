@@ -142,6 +142,7 @@ console.log(ages);
 */
 
 
+/*
 // it add the new element to the end of the array
 const friends = ['Michael', 'Steven', 'Peter'];
 
@@ -179,3 +180,19 @@ console.log(friends.includes(23)); // it will work
 if (friends.includes('Peter')){
     console.log("You have a friend called Peter");
 }
+*/
+
+
+function calcTip(bill){
+    let tip = 0;
+    if (bill >= 50 && bill <= 300){
+        tip = .15 * bill;
+    } else {
+        tip = .2 * bill;
+    }
+    return tip;
+}
+
+const bills = [125, 555, 44];
+const tips = [calcTip(bills[0]), calcTip(bills[1]), calcTip(bills[2])];
+const totals = [bills[0] + tips[0], bills[1] + tips[1], bills[2] + tips[2]];
