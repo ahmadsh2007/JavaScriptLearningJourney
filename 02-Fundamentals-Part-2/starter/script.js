@@ -97,3 +97,44 @@ function checkWinner(avgDolphins , avgKoalas){
     }
 }
 */
+
+
+// Arrays
+const friends = ['Michael', 'Steven', 'Peter'];
+console.log(friends);
+
+// You have to use `new` keyword
+const years = new Array(2007, 2024, 2026);
+console.log(years);
+
+console.log(years[0]);
+console.log(years.length);
+
+// to print the last element
+console.log(years[years.length - 1]);
+
+// only primitive values are immutable
+// so const won't affect array but note that we can't replace the entire array in const (check line 122)
+console.log(friends);
+friends[2] = 'Ahmad';
+console.log(friends);
+
+// friends = ['Ahmad', 'Bob'];
+
+// Array can hold differenet value in the same time
+const Ahmad = ['Ahmad', 'Shatnawi', 2025 - 2007, 'Student', friends];
+console.log(Ahmad);
+
+// Exercise
+const calcAge = function (birthYear){
+    return 2025 - birthYear;
+}
+const birthYear = [1966, 1976, 2000, 2002, 2007, 2011];
+
+const age1 = calcAge(birthYear[0]);
+const age2 = calcAge(birthYear[1]);
+const age3 = calcAge(birthYear[birthYear.length - 1]);
+console.log(age1, age2, age3);
+
+const ages = [calcAge(birthYear[0]), calcAge(birthYear[1]), calcAge(birthYear[birthYear.length - 1])];
+console.log(ages);
