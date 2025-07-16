@@ -35,7 +35,7 @@ console.log(appleJuice);
 
 
 /*
-// * Funtion declaration
+// ! Funtion declaration
 const age1 = calcAge1(2007)
 
 function calcAge1(birthYear){
@@ -227,6 +227,7 @@ console.log(ahmad);
 */
 
 
+/*
 const ahmad = {
     firstName: 'Ahmad',
     lastName: 'Shatnawi',
@@ -257,3 +258,65 @@ ahmad['discord'] = 'leeking.s';
 console.log(ahmad);
 
 console.log(`${ahmad.firstName} has ${ahmad['friends'].length} friends, and his best friend is called ${ahmad['friends'][0]}`);
+*/
+
+
+const ahmad = {
+    firstName: 'Ahmad',
+    lastName: 'Shatnawi',
+    birthYear: 2007,
+    job: 'Student',
+    friends: ['Omar', 'Homam', 'Wasfi'],
+    hasDriverLicesnse: true,
+
+    calcAge: function(birthYear){
+        return 2025 - birthYear;
+    }
+};
+
+console.log(ahmad.calcAge(2007));
+console.log(ahmad['calcAge'](2007));
+
+console.log(ahmad['calcAge'](ahmad.birthYear));
+console.log(ahmad['calcAge'](ahmad['birthYear']));
+
+// OR DO THIS TO PREVENT REPEATING YOURSELF IN FUNCTIONS (look at the function)
+// this calls the object itself
+const ahmad2 = {
+    firstName: 'Ahmad',
+    lastName: 'Shatnawi',
+    birthYear: 2007,
+    job: 'Student',
+    friends: ['Omar', 'Homam', 'Wasfi'],
+    hasDriverLicesnse: true,
+
+    // calcAge: function(){
+    //     return 2025 - this.birthYear;
+    // }
+
+    // We do this instead of the one above because we can prevent recalculating and executing the function
+    calcAge: function(){
+        this.age = 2025 - this.birthYear;
+        return this.age;
+    },
+
+    getSummary: function(){
+        return (`${this.firstName} is a ${this.calcAge()}-year old ${this.job}, and he has ${this.hasDriverLicesnse ? 'a': 'no'} driver's license`)
+    }
+};
+
+// 4 processes in total
+console.log(ahmad2.calcAge());
+console.log(ahmad2.calcAge());
+console.log(ahmad2.calcAge());
+console.log(ahmad2.calcAge());
+
+// 1 process in total
+console.log(ahmad2.calcAge());
+console.log(ahmad2.age);
+console.log(ahmad2.age);
+console.log(ahmad2.age);
+
+// Challenge
+// "Ahmad is a 18-year old student, and he has a driver's license"
+console.log(ahmad2.getSummary());
