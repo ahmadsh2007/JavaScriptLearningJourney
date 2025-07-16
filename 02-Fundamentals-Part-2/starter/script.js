@@ -352,6 +352,45 @@ is higher than ${mark.calcBMI() > john.calcBMI() ? john.fullName : mark.fullName
 */
 
 
+/*
 for (let i = 0; i < 30; i++){
     console.log(`Lifting weights repetition ${i + 1}`);
+}
+*/
+
+
+const ahmad = [
+    'Ahmad',
+    'Shatnawi',
+    2025 - 2007,
+    'Student',
+    ['Omar', 'Homam', 'Wasfi']
+];
+
+const ahmadTypes = [];
+
+for (let i = 0; i < ahmad.length; i++){
+    console.log(ahmad[i], ahmadTypes.push(typeof ahmad[i]));
+}
+console.log(ahmad);
+console.log(ahmadTypes);
+
+const ages = [];
+const year = [1966, 1976, 2000, 2002, 2007, 2011];
+for (let i = 0; i < year.length; i++){
+    ages.push(2025 - year[i]);
+}
+console.log(ages);
+
+// continue and break
+console.log('--- ONLY STRINGS ---');
+for (let i = 0; i < ahmad.length; i++){
+    if (typeof ahmad[i] !== 'string') continue;
+    console.log(ahmad[i], typeof ahmad[i]);
+}
+
+console.log('--- BREAK WITH NUMBER ---');
+for (let i = 0; i < ahmad.length; i++){
+    if (typeof ahmad[i] === 'number') break;
+    console.log(ahmad[i], typeof ahmad[i]);
 }
