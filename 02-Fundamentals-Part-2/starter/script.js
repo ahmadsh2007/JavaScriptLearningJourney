@@ -68,6 +68,8 @@ const yearsUntilRetirement = (birthYear, firstName) => {
 console.log(yearsUntilRetirement(2007, 'Ahmad Shatnawi'));
 */
 
+
+/*
 function cutFruit(fruit){
     return fruit * 4;
 }
@@ -80,3 +82,18 @@ function fruitProcessor(apples, oranges){
 }
 
 console.log(fruitProcessor(2, 3));
+
+let average = (score1, score2, score3) => (score1 + score2 + score3) / 3;
+let scoreDolphins = average(44, 23, 71);
+let scoreKoalas = average(65, 34, 27);
+
+function checkWinner(avgDolphins , avgKoalas){
+    if (avgDolphins > avgKoalas * 2){
+        console.log(`Dolphins win (${avgDolphins} vs. ${avgKoalas})`);
+    } else if (avgKoalas > avgDolphins * 2){
+        console.log(`Koalas win (${avgKoalas} vs. ${avgDolphins})`);
+    } else {
+        console.log("No team wins");
+    }
+}
+*/
