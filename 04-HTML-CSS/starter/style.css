@@ -1,11 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   background-color: rgb(89, 88, 197);
   font-family: Arial;
   font-size: 20px;
+  padding: 75px;
 }
 
 h1 {
   font-size: 40px;
+  margin-bottom: 25px; /* You can use padding-bottom but margin-bottom is better */
+}
+
+h2 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+p {
+  margin-bottom: 20px;
 }
 
 .first {
@@ -14,6 +31,27 @@ h1 {
 }
 
 #your-name {
-  background-color: greenyellow;
+  background-color: orange;
   border: 5px solid #2007;
+  width: 400px;
+  padding: 25px;
+  margin-top: 30px;
+}
+
+#LeekMind-Image {
+  width: 400px;
+}
+
+input,
+button {
+  padding: 10px;
+  font-size: 16px;
+}
+
+a {
+  background-color: gray;
+}
+
+#your-name h2 {
+  color: olive;
 }
