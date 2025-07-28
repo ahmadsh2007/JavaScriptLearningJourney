@@ -1,0 +1,19 @@
+body {
+  background-color: rgb(89, 88, 197);
+  font-family: Arial;
+  font-size: 20px;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+.first {
+  color: white;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+#your-name {
+  background-color: greenyellow;
+  border: 5px solid #2007;
+}
